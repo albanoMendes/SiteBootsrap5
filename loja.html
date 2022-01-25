@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.css">
+     <link rel="stylesheet" href="css/loja.css">
+    <title>Loja</title>
+</head>
+<body>
+    <div class="header" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav direito">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categória
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" style="font-size: 23pt;">shishas</a></li>
+                                <li><a class="dropdown-item" href="#" style="font-size: 23pt;">Perfumes</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" style="font-size: 23pt;">Diverso</a></li>
+                            </ul>
+                            </li>                        
+                        <a class="nav-link" href="#">Promoções</a>
+                        <a class="nav-link" href="#">Encomendas</a>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Fale Conosco</a>
+                    </div>
+                </div>     
+                <span class="navbar-brand nav-cantact">
+                    <i class="fas fa-phone-alt">
+                         +244 9234 323 244
+                    </i>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></i></a>
+                </span>                      
+            </div>
+        </nav>                    
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>          
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">                                      
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i> 
+                        Albano Mendes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
+                    <li><a class="dropdown-item" href="login.html">Sair</a></li>                      
+                    </ul>
+                </li>               
+                <li class="nav-item">              
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        MINHAS COMPRAS<i class="fas fa-cart-arrow-down">                          
+                        </i>  <span  class="badge bg-dark">0</span>                     
+                    </button>
+                                    
+                      <div class="offcanvas offcanvas-end carrinho" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header" id="carinho-header">
+                          <h5 id="offcanvasRightLabel">
+                            Carrinho <i class="fas fa-cart-arrow-down" style="color: #fff;"></i>                        
+                          </h5>
+                          <button type="button" class="btn-close  btn-close-white"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <table class="table" style="color: #fff;">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Preço</th>
+                                <th scope="col">Qtd</th>
+                                <th scope="col">Total</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>10.000</td>
+                                <td>
+                                  <a href="#">
+                                    <i class="fas fa-times" style="color: red;">
+                                    </i>
+                                  </a>                                 
+                              </td>
+                              </tr>                             
+                            </tbody>
+                          </table>
+                          <div class="container">
+                            <div class="row justify-content-between">
+                              <div class="col-4">
+                                Total: <span></span>kz
+                              </div>
+                              <div class="col-4" id="bt-compra">
+                                  <a href="#">Finalizar</a>
+                              </div>
+                            </div>
+                          </div>                          
+                        </div>
+                      </div>                         
+                      </a>                                                   
+                </li>      
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#606060" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section>
+      <div class="container-fluid" id="novos">          
+            <div id="sub-title">
+              <h3 class="display-3">         
+                <a href="#home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#698279" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                   </svg>
+                   Novos Produtos
+                </a>              
+              </h3>
+              <p>Produtos disponibilizados para venda no <strong>10 Março 2022</strong></p>                   
+          </div>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-sm-center">
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Perfume channel Coco F 100ml.jpg" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Coco Channel (F) 100ml</h6>
+                        <h7 class="card-title">Preço: 6000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Perfume cocoChannel(G).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                <h5 class="card-title">PERFUME</h5>
+                                <h6 class="card-title">Coco Channel Feminino 100ml</h6>
+                                <h7 class="card-title">Por apenas: 6000 kz</h7>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>
+
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/narg01boca.jpg" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Shisha</h5>
+                        <h6 class="card-title">Imperial 1 Saida</h6>
+                        <h7 class="card-title">Preço: 2400 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom01" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom01" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/sisha00(G).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">SHISHA</h5>
+                                  <h6 class="card-title">Imperial 1 Mangueira</h6>
+                                  <h7 class="card-title">Por apenas: 2400 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Shisha-Paris-a-Torre-2-mangueiras.png" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Shisha</h5>
+                        <h6 class="card-title">Paris a Torre 2 Saidas</h6>
+                        <h7 class="card-title">Preço: 4.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom02" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom02" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Shisha Paris a Torre 2 mangueiras(G).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">SHISHA</h5>
+                                  <h6 class="card-title">Paris a Torre 2 Mangueira</h6>
+                                  <h7 class="card-title">Por apenas: 4.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/charutoLenat.jpg" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Charuto</h5>
+                        <h6 class="card-title">Lenat Cubano</h6>
+                        <h7 class="card-title">Preço: 20.000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom03" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom03" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/charutoLenat(G).jpeg" width="200%" height="130%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">CHARUTO</h5>
+                                  <h6 class="card-title">Lenat C/6 Unidades</h6>
+                                  <h7 class="card-title">Por apenas: 20.000 kz</h7><br>                                   
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Mesa Shisha pequena.jpg" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Objetos</h5>
+                        <h6 class="card-title">Mesa Shisha (50cm)</h6>
+                        <h7 class="card-title">Preço: 2.000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom04" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom04" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/mesa-para-narguile(G).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">Objecto</h5>
+                                  <h6 class="card-title">Mesa para Shisha Pequena</h6>
+                                  <h7 class="card-title">Por apenas: 2.000 kz</h7><br>                                   
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-sm-center">
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Perfum Lomani Wild M 100ml.jpg" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Lomani Wild 100ml (M)</h6>                        
+                        <h7 class="card-title">Preço: 10.000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom05" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom05" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Perfume Lomani(G).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">Lumani Wild (100ml) Masculino</h6>
+                                  <h7 class="card-title">Por apenas: 10.000 kz</h7><br>                                   
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Charuto-Caixa-MadeiraG1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Charuto</h5>
+                        <h6 class="card-title">Caixa Com Cortador</h6>                      
+                        <h7 class="card-title">Preço: 25.000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom06" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom06" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Charuto-Caixa-MadeiraG7.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">CHARUTO</h5>
+                                  <h6 class="card-title">Caixa com cortador com 10 Unidades</h6>
+                                  <h7 class="card-title">Por apenas: 25.000 kz</h7><br>                                   
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Kit Jean Paul Gaultier Scandal(Perfume 80ml + Hidrantante 75 ml).jpg" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">kit scandel (F)</h6>                        
+                        <h7 class="card-title">Preço: 10.000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom07" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom07" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Kit Scandel.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">Kit Scandel Perfume 80ml + Creme 75ml</h6>
+                                  <h7 class="card-title">Por apenas: 10.000 kz</h7><br>                                   
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>&emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Shisha-de-Acrilico-Portatil-2Magueiras.png" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Shisha</h5>
+                        <h6 class="card-title">Acrilico 2 Mangueiras</h6>                      
+                        <h7 class="card-title">Preço: 5.000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom08" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom08" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/NarilêAcrilico425_.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">SHISHA</h5>
+                                  <h6 class="card-title">De Acrilico 2 Mangueiras</h6>
+                                  <h7 class="card-title">Por apenas: 5.000 kz</h7><br>                                   
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/perfume-paco-rabanne-lady-million.png" class="card-img-top" alt="...">
+                      <div class="card-body  desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Paco Rabanne (F) 80ml</h6>                      
+                        <h7 class="card-title">Preço: 12.000 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom09" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom09" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/perfume-paco-rabanne-lady-million-80ml.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">Paco Rabanne Lady million 80ml Feminino</h6>
+                                  <h7 class="card-title">Por apenas: 12.000 kz</h7><br>                                   
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>&emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>   
+
+              </div>
+              <!--<div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div> -->
+            </div>
+            <button class="carousel-control-prev bt-carrosel" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next bt-carrosel" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>  
+      <div class="container-fluid" id="promocao">          
+          <div id="sub-title">
+            <h3 class="display-3">         
+              <a href="#home">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#698279" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                PROMOÇÃO DO DIA
+              </a>              
+            </h3>
+            <p>Essas promoções vão até o dia <strong>10 Março 2022</strong>. APROVEITA</p>                   
+          </div> 
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>            
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-sm-center">
+                  
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Shisha-Artezanal-2-Mangueiras.png" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Shisha</h5>
+                        <h6 class="card-title">Artezanal de 2 Saidas</h6>
+                        <h7 class="card-title">Preço: 4.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom10" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Shisha-Artezanal 2 Mangueiras(G).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">SHISHA</h5>
+                                  <h6 class="card-title">Artezanal 2 Mangueira</h6>
+                                  <h7 class="card-title">Por apenas: 4.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Perfume Versace30ml.png" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Versace Femme 100ml</h6>
+                        <h7 class="card-title">Preço: 6.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom11" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom11" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Perfume Versace30ml(800).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">
+                                      Dylan Blue Pour (Feminino) Versace 100ml
+                                  </h6>
+                                  <h7 class="card-title">Por apenas: 6.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Perfume-Halston.jpg" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Halston 100ml Femenino</h6>
+                        <h7 class="card-title">Preço: 3.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom12" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/perfumeHelson.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">Halston 100ml Femenino</h6>
+                                  <h7 class="card-title">Por apenas: 3.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Charuto Don Fernando Robusto  1 unidade.jpg" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Charuto</h5>
+                        <h6 class="card-title">Don Fernando 1 unidade</h6>
+                        <h7 class="card-title">Preço: 1.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom13" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/charuto-don-fernando-exigente-maco-com-25.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">CHARUTO</h5>
+                                  <h6 class="card-title">Do Fernando Robusto 1 unidade</h6>
+                                  <h7 class="card-title">Por apenas: 1.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Shisha-Standasd-3-Mangueiras.png" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Shisha</h5>
+                        <h6 class="card-title">Standsd 3 Saidas</h6>
+                        <h7 class="card-title">Preço: 6.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom15" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom15" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Shisha Standasd 3 Mangueiras.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">SHISHA</h5>
+                                  <h6 class="card-title">Standsd 3 Mangueira</h6>
+                                  <h7 class="card-title">Por apenas: 6.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-sm-center">
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/Shisha-Alusi-Take-Gold-completa-Rosa.png" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Shisha</h5>
+                        <h6 class="card-title">Aluse Take Gold 1 Saidas</h6>
+                        <h7 class="card-title">Preço: 2.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom16" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/Shisha Alusi Take Gold completa Rosa.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">SHISHA</h5>
+                                  <h6 class="card-title">Aluse Take Gold Rosa 1 Mangueira</h6>
+                                  <h7 class="card-title">Por apenas: 2.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/perfume-dolce-e-gabbana-masculino_1(P).jpg" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Dolce Gabbana 125ml (M)</h6>
+                        <h7 class="card-title">Preço: 12.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom17" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom17" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/perfume-dolce-e-gabbana-masculino_1.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">Dolce Gabbana light Blue 125ml Masculino</h6>
+                                  <h7 class="card-title">Por apenas: 12.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/perf Dulce&Gabana F 75ml.jpg" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Dolce Gabbana 75ml (F)</h6>
+                        <h7 class="card-title">Preço: 8.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom18" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/DG(the one).png" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">Dolce Gabbana The One 75ml Feminino</h6>
+                                  <h7 class="card-title">Por apenas: 8.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/perceverancia-figurado-caixa-com-12_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Charuto</h5>
+                        <h6 class="card-title">Perc c/12 unidades</h6>
+                        <h7 class="card-title">Preço: 30.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom19" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/perceverancia-figurado-caixa-com-12_1 (1).jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">CHARUTO</h5>
+                                  <h6 class="card-title">Perceverancia caixa com 12 unidades</h6>
+                                  <h7 class="card-title">Por apenas: 30.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                    <div class="card card-prod">
+                      <img src="./imgem/parfum-jean-paul-gaultier-le-bleu-x-75-ml.jpg" class="card-img-top" alt="...">
+                      <div class="card-body desc">
+                        <h5 class="card-title">Perfume</h5>
+                        <h6 class="card-title">Jean P G LeBleu75ml (M)</h6>
+                        <h7 class="card-title">Preço: 7.500 kz</h7><br>
+                        <label for="quantity">Qtd:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                        <br><br>
+                        <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom20" aria-controls="offcanvasBottom">
+                          Ver 
+                          <i class="fas fa-eye"></i>                        
+                        </a>
+                        <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom20" aria-labelledby="offcanvasBottomLabel">
+                          <div class="offcanvas-header">                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-between">
+                              <div class="col-md-4">
+                                <img src="./imgem/parfum-jean-paul-gaultier-le-bleu-x-75-ml_imagen-1.jpg" width="200%" height="100%" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                  <h5 class="card-title">PERFUME</h5>
+                                  <h6 class="card-title">Jean Paulo Gaultier Le Bleu 75ml Masculino</h6>
+                                  <h7 class="card-title">Por apenas: 7.500 kz</h7><br>
+                                  <button type="button" class="btn btn-primary btn-add mt-3">
+                                    ADD  <i class="fas fa-cart-arrow-down"></i>
+                                  </button>  
+                              </div>
+                            </div>                           
+                          </div>                          
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#" class="btn btn-outline-primary btn-add">
+                          ADD 
+                          <i class="fas fa-cart-arrow-down"></i>                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>              
+            </div>
+            <button class="carousel-control-prev bt-carrosel01" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next bt-carrosel01" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      </div> 
+
+      <div class="container-fluid" id="maisvendidos">          
+        <div id="sub-title">
+          <h3 class="display-3">         
+            <a href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#698279" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+              </svg>
+              Produtos mais vendidos
+            </a>              
+          </h3>
+          <p>Essas promoções vão até o dia <strong>10 Março 2022</strong>. APROVEITA</p>                   
+        </div> 
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row justify-content-sm-center">
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/Shisha-Moon-Empire-Com-abafador.png" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Shisha</h5>
+                      <h6 class="card-title">Mood Empire 1 saida</h6>
+                      <h7 class="card-title">Preço: 3.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom21" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/Shisha Moon Empire Com abafador.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">SHISHA</h5>
+                                <h6 class="card-title">Mood Empire com desabafador 1 Mangueira</h6>
+                                <h7 class="card-title">Por apenas: 3.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/Shisha-2-Mangueiras-Pequena.png" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Shisha</h5>
+                      <h6 class="card-title">2 Saidas Pequena</h6>
+                      <h7 class="card-title">Preço: 3.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom22" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/Shisha 2 Mangueiras Pequena.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">SHISHA</h5>
+                                <h6 class="card-title">De 2 Mangueiras Pequena</h6>
+                                <h7 class="card-title">Por apenas: 3.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/Shisha-de-Acrílico-2-mangueira-branco.png" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Shisha</h5>
+                      <h6 class="card-title">De Acrilico 2 Saidas</h6>
+                      <h7 class="card-title">Preço: 4.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom23" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/Shisha de Acrílico 2 mangueira branco.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">SHISHA</h5>
+                                <h6 class="card-title">De Acrilico 2 Mangueiras</h6>
+                                <h7 class="card-title">Por apenas: 4.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/cigarrilha-cohiba-10.png" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Charuto</h5>
+                      <h6 class="card-title">Cohiba c/10 unidade</h6>
+                      <h7 class="card-title">Preço: 35.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom24" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/cigarrilha-cohiba-10-short-5f7246726632d-large.png" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">CHARUTO</h5>
+                                <h6 class="card-title">Cohiba caixa com 10 unidades</h6>
+                                <h7 class="card-title">Por apenas: 35.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/charutoPhillies(P).jpg" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Charuto</h5>
+                      <h6 class="card-title">Phillies Titan  c/5 un</h6>
+                      <h7 class="card-title">Preço: 14.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom25" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/charutoPhillies.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">CHARUTO</h5>
+                                <h6 class="card-title">Phillies Titan caixa com 5 unidades</h6>
+                                <h7 class="card-title">Por apenas: 14.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row justify-content-sm-center">
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/Perf Y Yves Saint Laurent Eau Toilett M 60ml.jpg" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Perfume</h5>
+                      <h6 class="card-title">Y Yves Saint ¨60ml (M)</h6>
+                      <h7 class="card-title">Preço: 15.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom26" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom26" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/Yves Saint.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">PERFUME</h5>
+                                <h6 class="card-title">Y Yves Saint Laurent Eau Toirent 60ml (Masculino)</h6>
+                                <h7 class="card-title">Por apenas: 15.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/UdV_Black.jpg" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Perfume</h5>
+                      <h6 class="card-title">UDV Black Ulric 100ml (M)</h6>
+                      <h7 class="card-title">Preço: 10.000 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom27" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom27" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/UdV_Black_02.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">PERFUME</h5>
+                                <h6 class="card-title">UDV Black Ulric Verens Eau de Toilett 100ml Masculino</h6>
+                                <h7 class="card-title">Por apenas: 10.000 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/perfume212sexy(P).jpg" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Perfume</h5>
+                      <h6 class="card-title">212 Sexy 100ml (F)</h6>
+                      <h7 class="card-title">Preço: 8.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom28" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom28" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/perfume212sexy.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">PERFUME</h5>
+                                <h6 class="card-title">212 Sexy 100ml Feminino</h6>
+                                <h7 class="card-title">Por apenas: 8.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/PerfumeVivara(P).jpg" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Perfume</h5>
+                      <h6 class="card-title">Vivara 100ml (Men)</h6>
+                      <h7 class="card-title">Preço: 13.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom29" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom29" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/PerfumeVivara.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">PERFUME</h5>
+                                <h6 class="card-title">Vivara 100ml (Masculino)</h6>
+                                <h7 class="card-title">Por apenas: 13.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 mb-5" style="width: 15rem; height: 25rem;">
+                  <div class="card card-prod">
+                    <img src="./imgem/PerfumeAVonFar away(P).jpg" class="card-img-top" alt="...">
+                    <div class="card-body desc">
+                      <h5 class="card-title">Perfume</h5>
+                      <h6 class="card-title">Avon Far Away G 100ml (F)</h6>
+                      <h7 class="card-title">Preço: 7.500 kz</h7><br>
+                      <label for="quantity">Qtd:</label>
+                      <input type="number" id="quantity" name="quantity" min="1" max="100" width="10px">
+                      <br><br>
+                      <a href="#" class="btn btn-outline-primary btn-ver" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom30" aria-controls="offcanvasBottom">
+                        Ver 
+                        <i class="fas fa-eye"></i>                        
+                      </a>
+                      <div class="offcanvas offcanvas-bottom centraliza" tabindex="-1" id="offcanvasBottom30" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">                            
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-between">
+                            <div class="col-md-4">
+                              <img src="./imgem/PerfumeAVonFar away.jpg" width="200%" height="100%" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">PERFUME</h5>
+                                <h6 class="card-title">Avon Far Away Glamour 100ml Feminino</h6>
+                                <h7 class="card-title">Por apenas: 7.500 kz</h7><br>
+                                <button type="button" class="btn btn-primary btn-add mt-3">
+                                  ADD  <i class="fas fa-cart-arrow-down"></i>
+                                </button>  
+                            </div>
+                          </div>                           
+                        </div>                          
+                      </div>
+                      &emsp;&emsp;&emsp;&emsp;
+                      <a href="#" class="btn btn-outline-primary btn-add">
+                        ADD 
+                        <i class="fas fa-cart-arrow-down"></i>                        
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>          
+            
+          </div>
+          <button class="carousel-control-prev bt-carrosel01" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next bt-carrosel01" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>  
+  </section>  
+  <div class="container bg-ligth">
+    <div class="row">
+      <div class="col-12 text-center my-5" id="titulo">
+        <h1 class="display-3">                   
+          Fazer Encomenda
+          <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#698279" class="bi bi-arrow-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+          </a>   
+        </h1>
+        <p>
+          Preencha os dados a baixo para contactarnos
+        </p>           
+      </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+            <form action="#" id="encomenda">
+                <div class="form-row">
+                  <div class="row">
+                      <div class="form-group col-sm-6 mb-4">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Ex: Maria André">
+                      </div>
+                      <div class="form-group col-sm-6 mb-4">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" class="form-control" name="tel" id="tel" placeholder="926 332 843">
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-sm-6 mb-4">
+                      <label for="emal">Email</label>
+                      <input type="email" class="form-control" name="emal" id="email" placeholder="Ex: antonio33@gmail.com">
+                    </div>
+                    <div class="form-group col-sm-6 mb-4">
+                      <div class="input-group mt-4">
+                        <select class="form-select" id="inputGroupSelect02">
+                          <option selected>Selecione</option>
+                          <option value="shisha">Shisha</option>
+                          <option value="Perfume">Perfume Ou Cosmético</option>
+                          <option value="charuto">Charuto</option>
+                          <option value="charuto">Outros</option>
+                        </select>
+                        <label class="input-group-text" for="inputGroupSelect02">Tipo Produto</label>
+                      </div>             
+                    </div>
+                  </div>                      
+                  <div class="row">
+                    <div class="form-group col-sm-6 mb-4">
+                      <label for="nome">Nome Produto</label>
+                      <input type="text" class="form-control" name="nome" id="nome" placeholder="Ex: Paco Rabanne One Million">
+                    </div>
+                    <div class="form-group col-sm-6 mb-4">
+                      <label for="qtd">Quantidade</label>
+                      <input type="number" class="form-control" name="qtd" id="qtd" min="0" max="100">
+                    </div>
+                  </div>
+                  <div class="form-group col-sm-12 mb-4">  
+                    <div class="input-group mb-3">
+                      <input type="file" class="form-control" name="foto" id="foto" placeholder="Insere uma imgem">
+                      <label  class="input-group-text" for="foto">Inserir Imagem</label> 
+                    </div>                                 
+                  </div>
+                </div>
+                <div class="form-row mt-4 mb-4">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" class="btn btn-primary">                          
+                          Enviar
+                        </button>
+                        <button type="button"  class="btn btn-outline-danger" data-bs-toggle="popover" title="Ajuda" data-bs-content="Preencha os campos acima e aguarda o retorno no seu email!">            
+                          Ajuda
+                        </button>
+                      </div>                      
+                    </div>
+                  </div>                                       
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+  <footer class="mt-5" id="rodape">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-md-4">          
+          <h6 style="margin-left:  20px;">                            
+            Paginas
+          </h6>
+          <ul class="nav flex-column" style="text-align: left;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#novos">Novos Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promocao">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#maisvendidos">Mais Vendidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#encomenda">
+                Encomenda
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>                            
+            Localização
+          </h6>
+          <h6>Luanda</h6>
+          <p class="mb-1">Maianga, Marteres do Kifangodo, avanida revolução de outubro nº 46B.</p>
+          <p class="mb-1">Viana, estrada do catete, zona economica n°23.</p>
+          <h6>Contatos</h6>
+          <p class="mb-1">TELEFONE: +222 042 567 / +222 777 993</p>
+          <p class="mb-1">WHATSAPP: 999 543 455 / 923 543 455</p>
+        </div>
+        
+        <div class="col-md-4">
+          <h6 style="text-align: center;">                                      
+              Parceiros
+          </h6>
+          <ul class="nav flex-column" style="text-align: center;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Overtime&NL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Yebba Ent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ZoneFrangace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                  Os 300
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

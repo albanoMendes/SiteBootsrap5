@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;       
+}
+.nav-cantact i:hover{
+   color: rgb(199, 207, 211);
+   transition: 1s;
+}
+.nav-cantact i{
+    color: #33343ad8;
+    padding: 2px;  
+    display: fixed;  
+}
+.header{
+    background-image: url(/imgem/PerfumeSexy.jpg);
+    height: 500px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    font-family: 'Tangerine', cursive;
+    font-size: 23pt;
+}
+#bt-compra a{
+    text-decoration: none;    
+    font-family: 'Prata', serif;
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(13, 13, 116);
+}
+.carrinho{
+    background-color: rgb(3, 3, 43);
+    color: #fff;
+    font-family: 'Vidaloka', serif;
+}
+#carinho-header{
+    background-color: rgb(13, 13, 116);
+    padding: 5px;
+}
+#bt-compra a:hover{
+    transition: 2s;
+    background-color: rgb(19, 19, 212);
+}
+#item-comp{
+    font-size: 12pt;
+    font-family: 'Roboto Mono', monospace;
+}
+.fa-cart-arrow-down{
+    font-size: 16px;
+    color: #27262cce;
+}
+#sub-title {
+   float: left;
+   padding: 0;
+    text-align: left;
+    margin-top: -15px;
+
+}
+#sub-title a{
+    text-decoration: none;
+    font-family: 'Prata', serif;
+    padding: 5px;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+#sub-title p{
+    font-size: 13pt;
+    font-family: 'Roboto Mono', monospace;
+    color: #33343ad8;
+}
+.desc{
+    font-size: 10pt;
+    font-family: 'Sanchez', serif;
+}
+.desc input{
+    width: 50px;
+}
+.bt-carrosel{
+    background-color: cornflowerblue;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 18%;
+}
+.bt-carrosel01{
+    background-color: cornflowerblue;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 18%;  
+}
+.btn-ver{
+    border: none;
+    font-family: 'Vidaloka', serif;
+}
+.btn-add{
+    font-family: 'Vidaloka', serif;
+    background-color: rgba(61, 99, 148, 0.788);
+    color: white;
+    padding: 5px;
+
+}
+.btn-add i{
+    color: white;
+}
+.card-prod{
+    border: none;
+    width: 110%;
+    
+}
+.centraliza {
+    width: 605px;
+    margin: auto auto 10% auto;
+    height: 405px; 
+}
+#titulo{
+    font-family: 'Quantico', sans-serif;
+    color: rgb(4, 20, 110);
+}
+#encomenda{
+    font-size: 12pt;
+    font-family: 'Sanchez', serif;    
+    padding: 20px;
+    border-radius: 4%;
+    box-shadow: 1px 1px 1px 1px rgba(27, 29, 29, 0.801);
+    background-color: rgba(75, 144, 209, 0.733);
+    color: white;
+}
+#encomenda input, #qtd{   
+    background-color: rgba(128, 135, 136, 0.664);
+    border: none;
+    color: white;    
+}
+#encomenda input:hover{
+    box-shadow: 1px 1px 1px 1px rgba(27, 29, 29, 0.801);
+}
+#rodape{
+    background-color: blue;
+    color: white;
+    font-size: 12pt;
+    font-family: 'Roboto Mono', monospace;
+}
+#rodape h6{
+    font-family: 'Vidaloka', serif;
+    font-size: 16pt;
+    
+}
+#rodape a{
+    background-color: blue;
+    color: white;
+    font-size: 20pt;
+    font-family: 'Tangerine', cursive;
+}
+#rodape a:hover{
+    color: rgb(2, 8, 8);
+    transition: 2s;
+    text-shadow: 1px 1px 1px 1px rgba(35, 37, 37, 0.897);
+}
